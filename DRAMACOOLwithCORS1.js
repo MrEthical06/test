@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-			const files = data.episodes.map(episodes => {
+			//const files = data.episodes.map(episodes => {
 
-
+				var epId = response.episodes[`${epnum}`].id
 				var epId = data.episodes[`${epnum}`].id
 				var mediaId = data.id
 
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						//})
 						//})
 					});
-			})
+			//})
 			//})
 
 		})
