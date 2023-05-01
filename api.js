@@ -57,7 +57,7 @@ fetch("https://api.consumet.org/meta/tmdb/info/94796?type=tv")
 						Object.assign(track, {
 							label: `${allsubs[i].lang}`,
 							default: false,
-							src: `${proxy}` + encodeURIComponent(`${allsubs[i].url}`)
+							src: `${proxy}` + `${allsubs[i].url}`
 						});
 						video.appendChild(track);
 					}
