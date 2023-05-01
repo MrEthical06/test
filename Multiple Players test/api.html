@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HLS Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
+    <style>
+        @import "compass/css3";
+
+        .button-holder {
+            button
+
+        {
+            border: 1px solid #333;
+            margin: 0 0 5px 5px;
+            color: #fff;
+            font-size: 14px;
+            text-decoration: none;
+            text-transform: uppercase;
+            background: #111;
+            padding: 0.5em;
+            cursor: pointer;
+            @include transition(all .2s ease);
+        }
+
+        button:hover {
+            @include transform(rotate(-45deg));
+        }
+
+        }
+
+        @mixin transition($values) {
+            -webkit-transition: $values;
+            -moz-transition: $values;
+            -o-transition: $values;
+            -ms-transition: $values;
+            transition: $values;
+        }
+
+        @mixin transform($degrees) {
+            -webkit-transform: $degrees;
+            -moz-transform: $degrees;
+            -o-transform: $degrees;
+            -ms-transform: $degrees;
+            transform: $degrees;
+        }
+    </style>
+    <link href="./plyr.css" rel="stylesheet" />
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL"></script>
+    <script src="./player.js"></script>
+    <script src="DRAMACOOLwithCORS1.js"></script>
+</head>
+<body>
+    <div class="container">
+        <video controls crossorigin playsinline></video>
+    </div>
+
+    <div id="list"></div>
+    <p id="result"></p>
+
+</body>
+</html>
