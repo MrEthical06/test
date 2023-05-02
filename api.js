@@ -1,6 +1,7 @@
 
 const uri = "https://api.consumet.org/";
 const epinfo = "meta/tmdb/watch/";
+const proxy = "https://cors.zimjs.com/";
 
 //following are to be changed as per show
 const epnum = 0;
